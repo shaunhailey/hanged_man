@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hanged Man</title>
+  </head>
+  <body>
+    <h1>This is Hanged Man</h1>
+    <h3>(A killer word game)</h3>
+    <div class="gameBoxes">
+      <form class="" action="index.mst" method="post">
+        <input type="text" name="letter" value="">
+      </form>
+    </div>
+
+    <h3>Available Letters</h3>
+    <div class="availBoxes">
+      <form class="" action="index.mst" method="post">
+        <input type="text" name="availLetter" value="">
+      </form>
+    </div>
+
+    <h3>Used Letters</h3>
+    <div class="usedBoxes">
+      <form class="" action="index.mst" method="post">
+        <input type="text" name="usedLetter" value="">
+      </form>
+    </div>
+
+    <h3>Guesses Remaining</h3>
+      <p>Number</p>
+
+    <button type="submit" name="button">Play Again?</button>
+
+  </body>
+</html>
