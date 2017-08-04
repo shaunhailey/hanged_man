@@ -2,22 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Hanged Man</title>
   </head>
   <body>
     <h1>This is Hanged Man</h1>
     <h3>(A killer word game)</h3>
     <div class="gameBoxes">
-      <form class="" action="index.mst" method="post">
-        <input type="text" name="letter" value="">
-      </form>
+      {{#wordMasked}}
+      <div class="tiles"> {{.}} </div>
+      {{/wordMasked}}
     </div>
 
     <h3>Available Letters</h3>
     <div class="availBoxes">
-      <form class="" action="index.mst" method="post">
-        <input type="text" name="availLetter" value="">
-      </form>
+      <button type="submit" class="letters" name="letters"></button>
     </div>
 
     <h3>Used Letters</h3>

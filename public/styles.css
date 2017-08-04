@@ -6,4 +6,15 @@ div {
   border-color: red;
   border-width: 3px;
   padding: 1px;
+  width: 100px;
+  height: 100px;
+}
+.letters,
+.tiles,
+.gameBoxes {
+  width: 100px;
+  height: 100px;
+  border-color: red;
+  border-width: 3px;
+  padding: 1px;
 }
