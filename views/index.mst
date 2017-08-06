@@ -16,20 +16,42 @@
 
     <h3>Available Letters</h3>
     <div class="availBoxes">
-      <button type="submit" class="letters" name="letters"></button>
+      <button type="submit" class="letters" name="letters" value="A">A</button>
+      <button type="submit" class="letters" name="letters" value="B">B</button>
+      <button type="submit" class="letters" name="letters" value="C">C</button>
+      <button type="submit" class="letters" name="letters" value="D">D</button>
+      <button type="submit" class="letters" name="letters" value="E">E</button>
+      <button type="submit" class="letters" name="letters" value="F">F</button>
+      <button type="submit" class="letters" name="letters" value="G">G</button>
+      <button type="submit" class="letters" name="letters" value="H">H</button>
+      <button type="submit" class="letters" name="letters" value="I">I</button>
+      <button type="submit" class="letters" name="letters" value="J">J</button>
+      <button type="submit" class="letters" name="letters" value="K">K</button>
+      <button type="submit" class="letters" name="letters" value="L">L</button>
+      <button type="submit" class="letters" name="letters" value="M">M</button>
+      <button type="submit" class="letters" name="letters" value="N">N</button>
+      <button type="submit" class="letters" name="letters" value="O">O</button>
+      <button type="submit" class="letters" name="letters" value="P">P</button>
+      <button type="submit" class="letters" name="letters" value="Q">Q</button>
+      <button type="submit" class="letters" name="letters" value="R">R</button>
+      <button type="submit" class="letters" name="letters" value="S">S</button>
+      <button type="submit" class="letters" name="letters" value="T">T</button>
+      <button type="submit" class="letters" name="letters" value="U">U</button>
+      <button type="submit" class="letters" name="letters" value="V">V</button>
+      <button type="submit" class="letters" name="letters" value="W">W</button>
+      <button type="submit" class="letters" name="letters" value="X">X</button>
+      <button type="submit" class="letters" name="letters" value="Y">Y</button>
+      <button type="submit" class="letters" name="letters" value="Z">Z</button>
+
     </div>
 
-    <h3>Used Letters</h3>
-    <div class="usedBoxes">
-      <form class="" action="index.mst" method="post">
-        <input type="text" name="usedLetter" value="">
-      </form>
-    </div>
+
 
     <h3>Guesses Remaining</h3>
       <p>Number</p>
 
-    <button type="submit" name="button">Play Again?</button>
+    <button type="submit" name="button" class="replay">Play Again?</button>
+    <script src="test.js" charset="utf-8"></script>
 
   </body>
 </html>

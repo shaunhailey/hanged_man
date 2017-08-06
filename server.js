@@ -26,57 +26,42 @@ app.get('/', function(req, res) {
   //the below "var word" is confirmed working, providing a random word
   var word = words[Math.floor(Math.random() * words.length)]
   //wordMasked is splitting word into letters
+  //note: experiementing with transparent text in CSS, check console for text
   var wordMasked = word.split('')
-  //placeHolder is giving the number of letters in wordMasked
-  var wordNumber = wordMasked.length
 
-  const alphabet = [
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    'o',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    'u',
-    'v',
-    'w',
-    'x',
-    'y',
-    'z'
-  ]
-
-  // function wordSplitter(word) {
-  //   for (var i = 0; i < word.length; i++) {
-  //     var letterMatrix = word.charAt(i)
-  //   }
-  // }
+  // let hearButton = document.querySelectorAll('button')
+  // hearButton.forEach(button => {
+  //   button.addEventListener('click', event => {
+  //     var button = document.getElementByClassName('letters')
+  //     button.addEventListener('click', hideshow, false)
+  //
+  //     function hideshow() {
+  //       document.getElementByClassName('letters').style.display = 'block'
+  //       this.style.display = 'none'
+  //     }
+  //   })
+  // })
   res.render('index', { wordMasked: wordMasked })
-  // res.render('index', word)
-  //  res.render('index', alphabet)
 })
 
 app.listen(3000, () => {
   console.log('Magic is happening on port 3000')
 })
 
+// let hearButton = document.querySelectorAll('button')
 // hearButton.forEach(button => {
 //   button.addEventListener('click', event => {
-//     console.log(event.target)
-
+//     var button = document.getElementByClassName('letters')
+//     button.addEventListener('click', hideshow, false)
+//
+//     function hideshow() {
+//       document.getElementByClassName('letters').style.display = 'block'
+//       this.style.display = 'none'
+//
+//       res.render('index', { wordMasked: wordMasked })
+//     }
+//   })
+// })
 // const  = req.session. || []
 // const templateData = {
 //   uncompleted: todoList.filter(todo => !todo.completed),
