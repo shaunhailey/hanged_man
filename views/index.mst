@@ -9,13 +9,14 @@
     <h1>This is Hanged Man</h1>
     <h3>(A killer word game)</h3>
     <div class="gameBoxes">
-      {{#wordMasked}}
+      {{#wordSplitter}}
       <div class="tiles"> {{.}} </div>
-      {{/wordMasked}}
+      {{/wordSplitter}}
     </div>
 
     <h3>Available Letters</h3>
     <div class="availBoxes">
+      <form method="post" action="/" class="availBoxes">
       <button type="submit" class="letters" name="letters" value="A">A</button>
       <button type="submit" class="letters" name="letters" value="B">B</button>
       <button type="submit" class="letters" name="letters" value="C">C</button>
@@ -42,15 +43,16 @@
       <button type="submit" class="letters" name="letters" value="X">X</button>
       <button type="submit" class="letters" name="letters" value="Y">Y</button>
       <button type="submit" class="letters" name="letters" value="Z">Z</button>
-
+</form>
     </div>
 
 
 
     <h3>Guesses Remaining</h3>
       <p>Number</p>
-
+  <form class="reset" action="index.html" method="post">
     <button type="submit" name="button" class="replay">Play Again?</button>
+  </form>
     <script src="test.js" charset="utf-8"></script>
 
   </body>
